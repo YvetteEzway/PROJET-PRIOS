@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.4 on win32)" generated="2024-09-17T10:33:37.509426" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\EZWAY\Desktop\Nouveau dossier\Prios\Prios\Test">
+<suite id="s1-s1" name="01 PRIOS A-M Vente" source="C:\Users\EZWAY\Desktop\Nouveau dossier\Prios\Prios\Test\01_PRIOS A-M Vente">
+<suite id="s1-s1-s1" name="A-M Vente 01 1 Sélection de PRIOS Agriculture et Navigation" source="C:\Users\EZWAY\Desktop\Nouveau dossier\Prios\Prios\Test\01_PRIOS A-M Vente\A-M Vente_01_1_Sélection de PRIOS Agriculture et Navigation.robot">
+<test id="s1-s1-s1-t1" name="Sélection de &quot;PRIOS Agriculture&quot; et Navigation" line="9">
+<kw name=" Authenticate User" owner="squash_resources" type="SETUP">
+<kw name="Open Login Page" owner="squash_resources">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-17T10:33:38.050726" level="INFO">${service} = &lt;selenium.webdriver.chrome.service.Service object at 0x0000012CEE9FF020&gt;</msg>
+<var>${service}</var>
+<arg>sys.modules['selenium.webdriver.chrome.service'].Service("${DRIVER_PATH}")</arg>
+<arg>sys, selenium.webdriver.chrome.service</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-17T10:33:38.050726" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-17T10:33:38.050726" level="INFO">Opening browser 'Chrome' to base url 'https://portail-0015.cloud-prios.fr/'.</msg>
+<msg time="2024-09-17T10:33:38.050726" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-17T10:33:38.050726" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<arg>${BASE_URL}</arg>
+<arg>Chrome</arg>
+<arg>service=${service}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-09-17T10:33:38.050726" elapsed="0.008056">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-17T10:33:38.050726" elapsed="0.008056">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Enter Email" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<kw name="Click Submit Button" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Password" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<kw name="Click Login Button" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Home Page" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${AUTHENTICATED}</arg>
+<arg>True</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-17T10:33:38.050726" elapsed="0.008056">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Teardown Test Environment" owner="squash_resources" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-17T10:33:38.058782" level="INFO">Tearing down the test environment</msg>
+<arg>Tearing down the test environment</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-17T10:33:38.058782" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-17T10:33:38.050726" elapsed="0.008056">Setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" start="2024-09-17T10:33:37.547976" elapsed="0.510806"/>
+</suite>
+<suite id="s1-s1-s2" name="A-M Vente 01 2-Création d'un Nouvel Ordre de Livraison" source="C:\Users\EZWAY\Desktop\Nouveau dossier\Prios\Prios\Test\01_PRIOS A-M Vente\A-M Vente_01_2-Création d'un Nouvel Ordre de Livraison.robot">
+<test id="s1-s1-s2-t1" name="Creation d'un Nouvel Ordre de Livraison" line="8">
+<kw name=" Authenticate User" owner="squash_resources" type="SETUP">
+<kw name="Open Login Page" owner="squash_resources">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-17T10:33:38.078962" level="INFO">${service} = &lt;selenium.webdriver.chrome.service.Service object at 0x0000012CEE9FF6B0&gt;</msg>
+<var>${service}</var>
+<arg>sys.modules['selenium.webdriver.chrome.service'].Service("${DRIVER_PATH}")</arg>
+<arg>sys, selenium.webdriver.chrome.service</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-17T10:33:38.078962" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-17T10:33:38.078962" level="INFO">Opening browser 'Chrome' to base url 'https://portail-0015.cloud-prios.fr/'.</msg>
+<msg time="2024-09-17T10:33:38.078962" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-17T10:33:38.078962" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<arg>${BASE_URL}</arg>
+<arg>Chrome</arg>
+<arg>service=${service}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-09-17T10:33:38.078962" elapsed="0.000000">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-09-17T10:33:38.078962" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-17T10:33:38.078962" elapsed="0.000000">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Enter Email" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.078962" elapsed="0.000000"/>
+</kw>
+<kw name="Click Submit Button" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.078962" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Password" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.078962" elapsed="0.000000"/>
+</kw>
+<kw name="Click Login Button" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.078962" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Home Page" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.089100" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${AUTHENTICATED}</arg>
+<arg>True</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2024-09-17T10:33:38.089100" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-17T10:33:38.070889" elapsed="0.018211">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<status status="FAIL" start="2024-09-17T10:33:38.070889" elapsed="0.018211">Setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" start="2024-09-17T10:33:38.058782" elapsed="0.032360"/>
+</suite>
+<status status="FAIL" start="2024-09-17T10:33:37.545112" elapsed="0.546148"/>
+</suite>
+<suite id="s1-s2" name="Authentification" source="C:\Users\EZWAY\Desktop\Nouveau dossier\Prios\Prios\Test\Authentification">
+<suite id="s1-s2-s1" name="Authentification" source="C:\Users\EZWAY\Desktop\Nouveau dossier\Prios\Prios\Test\Authentification\Authentification.robot">
+<test id="s1-s2-s1-t1" name="Authentification" line="5">
+<kw name="Setup Test Environment" owner="squash_resources" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-17T10:33:38.099327" level="INFO">Setting up the test environment</msg>
+<arg>Setting up the test environment</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-17T10:33:38.099327" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-17T10:33:38.099327" elapsed="0.000000"/>
+</kw>
+<kw name="Open Login Page" owner="squash_resources">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-17T10:33:38.099327" level="INFO">${service} = &lt;selenium.webdriver.chrome.service.Service object at 0x0000012CEEA41190&gt;</msg>
+<var>${service}</var>
+<arg>sys.modules['selenium.webdriver.chrome.service'].Service("${DRIVER_PATH}")</arg>
+<arg>sys, selenium.webdriver.chrome.service</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-17T10:33:38.099327" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-17T10:33:38.099327" level="INFO">Opening browser 'Chrome' to base url 'https://portail-0015.cloud-prios.fr/'.</msg>
+<msg time="2024-09-17T10:33:38.099327" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-17T10:33:38.099327" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<arg>${BASE_URL}</arg>
+<arg>Chrome</arg>
+<arg>service=${service}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-09-17T10:33:38.099327" elapsed="0.000000">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-09-17T10:33:38.099327" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-17T10:33:38.099327" elapsed="0.000000">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Enter Email" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.099327" elapsed="0.000000"/>
+</kw>
+<kw name="Click Submit Button" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.109383" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Password" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.109383" elapsed="0.000000"/>
+</kw>
+<kw name="Click Login Button" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.109383" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Home Page" owner="squash_resources">
+<status status="NOT RUN" start="2024-09-17T10:33:38.111630" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>clicked_element_screenshot.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-09-17T10:33:38.111630" elapsed="0.000000"/>
+</kw>
+<kw name="Teardown Test Environment" owner="squash_resources" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-17T10:33:38.111630" level="INFO">Tearing down the test environment</msg>
+<arg>Tearing down the test environment</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-17T10:33:38.111630" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-17T10:33:38.111630" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-17T10:33:38.099327" elapsed="0.012303">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" start="2024-09-17T10:33:38.091260" elapsed="0.020370"/>
+</suite>
+<status status="FAIL" start="2024-09-17T10:33:38.091260" elapsed="0.028543"/>
+</suite>
+<status status="FAIL" start="2024-09-17T10:33:37.509426" elapsed="0.610377"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="01 PRIOS A-M Vente">Test.01 PRIOS A-M Vente</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="A-M Vente 01 1 Sélection de PRIOS Agriculture et Navigation">Test.01 PRIOS A-M Vente.A-M Vente 01 1 Sélection de PRIOS Agriculture et Navigation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s2" name="A-M Vente 01 2-Création d'un Nouvel Ordre de Livraison">Test.01 PRIOS A-M Vente.A-M Vente 01 2-Création d'un Nouvel Ordre de Livraison</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Authentification">Test.Authentification</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2-s1" name="Authentification">Test.Authentification.Authentification</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
